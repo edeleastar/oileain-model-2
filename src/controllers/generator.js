@@ -38,7 +38,7 @@ export function generateAllSlim(coasts, path) {
         coastObj.pois = [];
         coast.pois.forEach((poi) => {
             let poiObj = {};
-            poiObj.name = poi.name;
+            poiObj.name = poi.nameHtml;
             poiObj.safeName = poi.safeName;
             poiObj.coordinates = { geo: poi.coordinates.geo };
             coastObj.pois.push(poiObj);
